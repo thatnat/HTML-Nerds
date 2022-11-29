@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Дизайн-студия Нёрдс</title>
+  </head>
+  <body>
+
+  <header>
+   <nav>
+    <a>
+      <img src="#" alt="Логотип дизайн-студии Нёрдс">
+    </a>
+    <ul>
+      <li><a href="blank.html">Студия</a></li>
+      <li><a href="blank.html">Клиенты</a></li>
+      <li><a href="catalog.html">Магазин</a></li>
+      <li><a href="blank.html">Контакты</a></li>
+    </ul>
+    <a href="blank.html">Корзина</a>
+   </nav>
+  </header>
+   
+  <main>
+
+    <h1>Магазин готовых шаблонов</h1>
+
+    <section>
+        <h2>Фильтр товаров</h2>
+        <form action="#" method="get">
+            <fieldset>
+              <legend>Стоимость</legend>
+              <label>от<input type="text" value="0"></label>
+              <label>до<input type="text" value="150000"></label>
+            </fieldset>
+            <fieldset>
+            <ul>
+                <li>
+                  <input type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked>
+                  <label for="filter-adaptive">Адаптивная</label>
+                </li>
+                <li>
+                  <input type="radio" name="product-group" value="fixed" id="filter-fixed">
+                  <label for="filter-fixed">Фиксированная</label>
+                </li>
+                <li>
+                  <input type="radio" name="product-group" value="elastic" id="filter-elastic">
+                  <label for="filter-elastic">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности</legend>
+              <label><input type="checkbox" name="peculiarities" checked value="slider">Слайдер</label checked>
+              <label><input type="checkbox" name="peculiarities" checked value="advantage-block">Блок преимуществ</label>
+              <label><input type="checkbox" name="peculiarities" checked value="news">Новости</label checked>
+              <label><input type="checkbox" name="peculiarities" checked value="gallery">Галерея</label>
+              <label><input type="checkbox" name="peculiarities" checked value="basket">Корзина</label>
+            </fieldset>
+            <button type="submit">Показать</button>
+          </form>
+    </section>
+
+    <section>
+      
+      <h2>Сортировать</h2>
+          <ul>
+            <li>
+              <a href="catalog.html">По цене</a>
+            </li>
+            <li>
+              <a href="catalog.html">По типу</a>
+            </li>
+            <li>
+              <a href="catalog.html">По названию</a>
+            </li>
+          </ul>
+          
+    </section>
+
+  </main>
+
+  <footer>
+
+  <section>
+    <h2>Контакты</h2>
+    <p>Nёrds Design Studio</p>
+    <p>наб. Реки Карповки,<br>
+      5 лит П, Санкт-Петербург
+    </p>
+    <p>
+      <a href="tel:+78005558628">+7 800 555-86-28</a>
+    </p>
+    <a href="#">Напишите нам</a>
+
+  </section>
+
+  <section>
+    <h2>Давайте дружить!</h2>
+    <ul>
+      <li>
+        <a href="#">Вконтакте</a>
+      </li>
+      <li>
+        <a href="#">Фейсбук</a>
+      </li>
+      <li>
+        <a href="#">Инстаграм</a>
+      </li>
+    </ul>
+    <p>Давайте дружить, это выгодно!</p>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
+  </section>
+
+  </footer>
+
+  <section>
+    <h2>Напишите нам</h2>
+    <form action="#" method="post">
+      <p>
+        <label for="login-login">Ваше имя:</label>
+        <input id="login-login" type="text" name="login" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="login-email">Ваш email:</label>
+        <input id="login-email" type="email" name="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <textarea name="comment" id="comment-field" placeholder="В свободной форме"></textarea>
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
+    <button type="button">Закрыть</button>
+  </section>
+  
+  </body>
+</html>
