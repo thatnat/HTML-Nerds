@@ -8,13 +8,13 @@
 
   <header>
    <nav>
-    <a>
+    <a href="index.html">
       <img src="#" alt="Логотип дизайн-студии Нёрдс">
     </a>
     <ul>
       <li><a href="blank.html">Студия</a></li>
       <li><a href="blank.html">Клиенты</a></li>
-      <li><a href="catalog.html">Магазин</a></li>
+      <li><a>Магазин</a></li>
       <li><a href="blank.html">Контакты</a></li>
     </ul>
     <a href="blank.html">Корзина</a>
@@ -27,11 +27,11 @@
 
     <section>
         <h2>Фильтр товаров</h2>
-        <form action="#" method="get">
+        <form action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
               <legend>Стоимость</legend>
-              <label>от<input type="text" value="0"></label>
-              <label>до<input type="text" value="150000"></label>
+              <label>от<input type="text" name="min" value="0"></label>
+              <label>до<input type="text" name="max" value="150000"></label>
             </fieldset>
             <fieldset>
             <ul>
@@ -51,11 +51,15 @@
             </fieldset>
             <fieldset>
               <legend>Особенности</legend>
-              <label><input type="checkbox" name="peculiarities" checked value="slider">Слайдер</label checked>
-              <label><input type="checkbox" name="peculiarities" checked value="advantage-block">Блок преимуществ</label>
-              <label><input type="checkbox" name="peculiarities" checked value="news">Новости</label checked>
-              <label><input type="checkbox" name="peculiarities" checked value="gallery">Галерея</label>
-              <label><input type="checkbox" name="peculiarities" checked value="basket">Корзина</label>
+              <label><input type="checkbox" name="slider" checked>Слайдер</label>
+              <label><input type="checkbox" name="advantage-block">Блок преимуществ</label>
+              <label><input type="checkbox" name="news" checked>Новости</label>
+              <label><input type="checkbox" name="gallery">Галерея</label>
+              <label><input type="checkbox" name="basket">Корзина</label>
+              <!-- <li>
+                <input type="checkbox" name="malin-goetz" id="filter-malin-goetz">
+                <label for="filter-malin-goetz">Malin+Goetz</label>
+              </li> -->
             </fieldset>
             <button type="submit">Показать</button>
           </form>
@@ -75,8 +79,78 @@
               <a href="catalog.html">По названию</a>
             </li>
           </ul>
+
+          <ul>
+            <li>
+              <a href="catalog.html">От большего к меньшему</a>
+            </li>
+            <li>
+              <a href="catalog.html">От меньшего к большему</a>
+            </li>
+          </ul>
           
     </section>
+
+    <section>
+      <h2>Товары</h2>
+      <ul>
+        <li>
+          <h3>Sedona</h3>
+          <a href="#"><img src="#" alt="Sedona"></a>
+          <p>Информационный сайт для туристов</p>
+          <button type="button">9900</button>
+        </li>
+        <li>
+          <!-- <h3> <a href="#"></a> Pink App</h3> -->
+          <a href="#"><img src="#" alt="Pink App"></a>
+          <p>Продуктовый лендинг приложения для iOS и Android</p>
+          <button type="button">9900</button>
+        </li>
+        <li>
+          <h3>Barbershop</h3>
+          <a href="#"><img src="#" alt="Barbershop"></a>
+          <p>Сайт салона красоты. Для мужчин, да.</p>
+          <button type="button">9900</button>
+        </li>
+        <li>
+          <h3>Mishka</h3>
+          <a href="#"><img src="#" alt="Mishka"></a>
+          <p>Интернет-магазин вязаных игрушек</p>
+          <button type="button">9900</button>
+        </li>
+        <li>
+          <h3>A Plus</h3>
+          <a href="#"><img src="#" alt="A Plus"></a>
+          <p>Лендинг курсов повышения квалификации</p>
+          <button type="button">9900</button>
+        </li>
+        <li>
+          <h3>Кваст</h3>
+          <a href="#"><img src="#" alt="Кваст"></a>
+          <p>Промо-сайт производителя крафтового кваса</p>
+          <button type="button">9900</button>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Пагинация</h2>
+      <ul>
+        <li>
+          <a href="#">1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">Следующая</a>
+        </li>
+      </ul>
+    </section>
+
 
   </main>
 
