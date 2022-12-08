@@ -37,14 +37,19 @@
     --text-color-buttons: #FFFFFF;
     --background-color-header: #EEEEEE;
     --text-color-hover: #FB565A;
-    /* --: #E74246;
-    --: #D7373B;
-    --: #00CA74;
-    --: #00BC6C;
-    --: #00AA62;
-    --: #EFC849;
-    --: #EAB534;
-    --: #E5A722;
+    --text-color-addition:#283136;
+    /* Buttons */
+    --background-button-quiet: #FB565A;
+    --background-button-hover: #E74246;
+    --background-button-active: #D7373B;
+    --background-appbutton-quiet:#00CA74;
+    --background-appbutton-hover: #00BC6C;
+    --background-appbutton-active: #00AA62;
+    --background-presentation-quiet:#EFC849;
+    --background-presentation-hover: #EAB534;
+    --background-presentation-active: #E5A722;
+
+    /* --: 
     --: #E1E1E1;
     --: #DFDFDF;
     --: #D5D5D5;
@@ -61,8 +66,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    color: var(--text-color-main);
-    
+    color: var(--text-color-main); 
 }
 
 a {
@@ -74,6 +78,9 @@ img {
   height: auto;
 }
 
+h1, h2 {
+  display: none;
+}
 
  /* Main navigation */
 
@@ -104,4 +111,190 @@ img {
 .user-navigation a:active {
   color: var(--text-color-main);
   opacity: 0.3;
+}
+
+/* Slider */
+
+.slider {
+  background-color: var(--background-color-header);
+}
+
+.slider-header {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--text-color-main);
+}
+
+.button {
+  background-color: var(--background-button-quiet);
+  color: var(--text-color-buttons);
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: var(--background-button-hover);
+  color: var(--text-color-buttons);
+  text-transform: uppercase;
+}
+
+.button:active {
+  background-color: var(--background-button-active);
+  color: var(--text-color-buttons);
+  text-transform: uppercase;
+}
+
+.button:active span {
+  opacity: 0.3;
+}
+
+.slider-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color-addition);
+}
+
+
+
+/* Services */
+
+.services {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color-addition);
+}
+ .services-header {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--text-color-main);
+  text-transform: uppercase;
+ }
+
+ .services-list {
+  list-style: none;
+ }
+
+.services-info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color-addition);
+}
+
+.button-apps {
+  background-color: var(--background-appbutton-quiet);
+  color: var(--text-color-buttons);
+  text-transform: uppercase;
+}
+
+.button-apps:hover {
+  background-color: var(--background-appbutton-hover);
+  color: var(--text-color-buttons);
+  text-transform: uppercase;
+}
+
+.button-apps:active {
+  background-color: var(--background-appbutton-active);
+  color: var(--text-color-buttons);
+  text-transform: uppercase;
+}
+
+.button-presentation {
+  background-color: var(--background-presentation-quiet);
+  color: var(--text-color-buttons);
+  text-transform: uppercase;
+}
+
+.button-presentation:hover {
+  background-color: var(--background-presentation-hover);
+  color: var(--text-color-buttons);
+  text-transform: uppercase;
+}
+
+.button-presentation:active {
+  background-color: var(--background-presentation-active);
+  color: var(--text-color-buttons);
+  text-transform: uppercase;
+}
+
+/* Information */
+
+.info-header {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--text-color-main);
+}
+
+.info-oders {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--text-color-main);
+}
+
+.info-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color-addition);
+}
+ 
+.info-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color-addition);
+}
+
+/* Satistics */
+
+.statistics-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color-main);
+  text-transform: uppercase;
+}
+
+.statistics-term {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--text-color-addition);
+}
+
+.statistics-scale {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+  color: var(--text-color-main);
+}
+
+/* Clients */
+
+.clients-list {
+  list-style: none;
+}
+
+.logo {
+  opacity: 0.2;
+}
+
+.logo-active:active {
+  opacity: 0.1;
+}
+
+.logo-hover:hover {
+  opacity: 1;
+}
+
+/* Main Footer */
+
+.map {
+background-image: url("img/img-map.jpg");
 }
