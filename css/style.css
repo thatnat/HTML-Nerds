@@ -38,6 +38,7 @@
     --background-color-header: #EEEEEE;
     --text-color-hover: #FB565A;
     --text-color-addition:#283136;
+    --text-color-address: #666666;
     /* Buttons */
     --background-button-quiet: #FB565A;
     --background-button-hover: #E74246;
@@ -48,9 +49,9 @@
     --background-presentation-quiet:#EFC849;
     --background-presentation-hover: #EAB534;
     --background-presentation-active: #E5A722;
+    --background-icon-color: #E1E1E1;
 
     /* --: 
-    --: #E1E1E1;
     --: #DFDFDF;
     --: #D5D5D5;
     --: #DBDBDB;
@@ -251,6 +252,10 @@ h1, h2 {
   color: var(--text-color-addition);
 }
 
+.info-list {
+  list-style: none;
+}
+
 /* Satistics */
 
 .statistics-title {
@@ -295,6 +300,31 @@ h1, h2 {
 
 /* Main Footer */
 
-.map {
-background-image: url("img/img-map.jpg");
+/* Contacts */
+
+.contacts-heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contacts-address {
+  line-height: 18px;
+  color: var(--text-color-address);
+}
+
+.footer-phone {
+  line-height: 18px;
+  color: var(--text-color-address);
+}
+
+/* Social */
+
+.social-list {
+  list-style: none;
+}
+
+.social-button {
+  background-color: var(--background-icon-color);
 }
