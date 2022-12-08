@@ -37,7 +37,7 @@
     --text-color-buttons: #FFFFFF;
     --background-color-header: #EEEEEE;
     --text-color-hover: #FB565A;
-    --: #E74246;
+    /* --: #E74246;
     --: #D7373B;
     --: #00CA74;
     --: #00BC6C;
@@ -51,7 +51,7 @@
     --: #DBDBDB;
     --: #666666;
     --: #444444;
-    --: #283136;
+    --: #283136; */
   }
 
   /* Global */
@@ -100,8 +100,8 @@ img {
   color: var(--text-color-hover);
 }
 
-.site-navigation a:active 
+.site-navigation a:active,
 .user-navigation a:active {
-  color: var(--background-color-header);
+  color: var(--text-color-main);
   opacity: 0.3;
 }
