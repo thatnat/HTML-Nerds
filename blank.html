@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>Дизайн-студия Нёрдс</title>
+  <link href="normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body>
+<body class="page-body">
 
-  <header>
-    <nav>
-      <a>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
         <img src="img/logo/nerds-logo.svg" width="159" height="65" alt="Логотип дизайн-студии Нёрдс">
       </a>
-      <ul>
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="#">Магазин</a></li>
+      <ul class="site-navigation">
+        <li class="site-navigation-item"><a class="site-navigation-link" href="blank.html">Студия</a></li>
+        <li><a href="blank.html">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <a href="#">Корзина</a>
+      <div class="user-navigation">
+      <a class="cart-link" href="blank.html">Корзина</a>
+      </div>
     </nav>
   </header>
 
@@ -31,43 +35,45 @@
 
   </main>
 
-  <footer>
-
-    <section>
-      <h2>Контакты</h2>
-      <p>Nёrds Design Studio</p>
-      <p>наб. Реки Карповки,<br>
+  <footer class="main-footer">
+    
+    <div class="map">
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <p class="contacts-heading">Nёrds Design Studio</p>
+      <p class="contacts-address">наб. Реки Карповки,<br>
         5 лит П, Санкт-Петербург
       </p>
       <p>
-        <a href="tel:+78005558628">+7 800 555-86-28</a>
+        <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
       </p>
-      <a href="#">Напишите нам</a>
+      <a class="button" href="#">Напишите нам</a>
 
     </section>
+    </div>
 
-    <section>
-      <h2>Давайте дружить!</h2>
-      <ul>
-        <li>
-          <a href="#">Вконтакте</a>
+    <section class="footer-social">
+      <h2 class="visually-hidden">Давайте дружить!</h2>
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-button" href="#">Вконтакте</a>
         </li>
-        <li>
-          <a href="#">Фейсбук</a>
+        <li class="social-item">
+          <a class="social-button" href="#">Фейсбук</a>
         </li>
-        <li>
-          <a href="#">Инстаграм</a>
+        <li class="social-item">
+          <a  class="social-button" href="#">Инстаграм</a>
         </li>
       </ul>
-      <p>Давайте дружить, это выгодно!</p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <p class="social-slogan">Давайте дружить, это выгодно!</p>
+      <p class="social-promo">Скидка 10% для друзей из социальных сетей.</p>
     </section>
 
   </footer>
 
-  <section>
-    <h2>Напишите нам</h2>
-    <form action="#" method="post">
+  <section class="modal">
+    <h2 class="modal-title">Напишите нам</h2>
+    <form class="connect-form" action="https://echo.htmlacademy.ru" method="post">
       <p>
         <label for="login-login">Ваше имя:</label>
         <input id="login-login" type="text" name="login" placeholder="Имя Фамилия">
@@ -79,9 +85,9 @@
       <p>
         <textarea name="comment" id="comment-field" placeholder="В свободной форме"></textarea>
       </p>
-      <button type="submit">Отправить</button>
+      <button class="button" type="submit">Отправить</button>
     </form>
-    <button type="button">Закрыть</button>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 
 </body>
