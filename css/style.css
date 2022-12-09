@@ -1,76 +1,74 @@
 /* Fonts */
 @font-face {
-    font-family: "Roboto";
-    font-weight: 400;
-    font-style: normal;
-    src: local("Roboto"),
-         url("../fonts/roboto.woff2") format("woff2"),
-         url("../fonts/roboto.woff") format("woff");
-    font-display: swap;
-  }
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Roboto"),
+    url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff");
+  font-display: swap;
+}
 
-  @font-face {
-    font-family: "Roboto";
-    font-weight: 500;
-    font-style: normal;
-    src: local("Roboto"),
-         url("../fonts/robotomedium.woff2") format("woff2"),
-         url("../fonts/robotomedium.woff") format("woff");
-    font-display: swap;
-  }
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  src: local("Roboto"),
+    url("../fonts/robotomedium.woff2") format("woff2"),
+    url("../fonts/robotomedium.woff") format("woff");
+  font-display: swap;
+}
 
-  @font-face {
-    font-family: "Roboto";
-    font-weight: 700;
-    font-style: normal;
-    src: local("Roboto"),
-         url("../fonts/robotobold.woff2") format("woff2"),
-         url("../fonts/robotobold.woff") format("woff");
-    font-display: swap;
-  }
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Roboto"),
+    url("../fonts/robotobold.woff2") format("woff2"),
+    url("../fonts/robotobold.woff") format("woff");
+  font-display: swap;
+}
 
-  /* Variables */
+/* Variables */
 
 :root {
-    /* Text */
-    --text-color-main: #000000;
-    --text-color-buttons: #FFFFFF;
-    --background-color-header: #EEEEEE;
-    --text-color-hover: #FB565A;
-    --text-color-addition:#283136;
-    --text-color-address: #666666;
-    --text-color-promo: #444444;
-    /* Buttons */
-    --background-button-quiet: #FB565A;
-    --background-button-hover: #E74246;
-    --background-button-active: #D7373B;
-    --background-appbutton-quiet:#00CA74;
-    --background-appbutton-hover: #00BC6C;
-    --background-appbutton-active: #00AA62;
-    --background-presentation-quiet:#EFC849;
-    --background-presentation-hover: #EAB534;
-    --background-presentation-active: #E5A722;
-    --background-icon-color: #E1E1E1;
-     /* Modal */ 
-     --border-color: #D7DCDE;
-     --border-color-hover: #B4B9BB;
-    
+  /* Text */
+  --text-color-main: #000000;
+  --text-color-buttons: #FFFFFF;
+  --background-color-header: #EEEEEE;
+  --text-color-hover: #FB565A;
+  --text-color-addition: #283136;
+  --text-color-address: #666666;
+  --text-color-promo: #444444;
+  /* Buttons */
+  --background-button-quiet: #FB565A;
+  --background-button-hover: #E74246;
+  --background-button-active: #D7373B;
+  --background-appbutton-quiet: #00CA74;
+  --background-appbutton-hover: #00BC6C;
+  --background-appbutton-active: #00AA62;
+  --background-presentation-quiet: #EFC849;
+  --background-presentation-hover: #EAB534;
+  --background-presentation-active: #E5A722;
+  --background-icon-color: #E1E1E1;
+  /* Modal */
+  --border-color: #D7DCDE;
+  --border-color-hover: #B4B9BB;
+  /* Pagination */
+  --background-pagination-hover: #DFDFDF;
+  --background-pagination-active: #D5D5D5;
+  --background-pagination-border: #DBDBDB;
 
-    /* --: 
-    --: #DFDFDF;
-    --: #D5D5D5;
-    --: #DBDBDB;
-    */
-  }
+}
 
-  /* Global */
+/* Global */
 
 body {
-    font-family: "Roboto", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    color: var(--text-color-main); 
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--text-color-main);
 }
 
 a {
@@ -83,7 +81,7 @@ img {
 }
 
 
- /* Main navigation */
+/* Main navigation */
 
 .main-navigation {
   font-size: 16px;
@@ -175,17 +173,18 @@ img {
   line-height: 24px;
   color: var(--text-color-addition);
 }
- .services-header {
+
+.services-header {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   color: var(--text-color-main);
   text-transform: uppercase;
- }
+}
 
- .services-list {
+.services-list {
   list-style: none;
- }
+}
 
 .services-info {
   font-weight: 400;
@@ -253,7 +252,7 @@ img {
   line-height: 24px;
   color: var(--text-color-addition);
 }
- 
+
 .info-item {
   font-weight: 400;
   font-size: 16px;
@@ -451,24 +450,180 @@ textarea:invalid {
   text-transform: uppercase;
 }
 
-/* .filter-input-checkbox {
+.filter-input-shop {
   color: var(--text-color-addition);
   opacity: 0.4;
 }
 
-.filter-input-checkbox:hover {
+.filter-input-shop:hover {
   color: var(--text-color-addition);
+  opacity: 1;
 }
 
-.filter-input-checkbox:disabled {
+.filter-input-shop:disabled {
   color: var(--text-color-addition);
   opacity: 0.1;
 }
 
-.filter-input:disabled + label,
-.filter-input:checked:disabled + label,
-.filter-input:disabled:hover + label,
-.filter-input:disabled:focus + label {
+.filter-input:disabled+label,
+.filter-input:checked:disabled+label,
+.filter-input:disabled:hover+label,
+.filter-input:disabled:focus+label {
   color: var(--text-color-addition);
   opacity: 0.3;
-} */
+}
+
+.button-show {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--text-color-main);
+  background-color: var(--background-color-header);
+  border-radius: 3px;
+  border: none;
+}
+
+.button-show:hover {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--text-color-main);
+  background-color: var(--background-pagination-hover);
+  border-radius: 3px;
+  border: none;
+}
+
+.button-show:active {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--text-color-main);
+  background-color: var(--background-pagination-active);
+  border-radius: 3px;
+  border: none;
+  opacity: 0.3;
+}
+
+.price-cost {
+  line-height: 22px;
+  text-transform: uppercase;
+  color: var(--text-color-addition);
+}
+
+.filter-list {
+  list-style: none;
+}
+
+.filter-option {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--text-color-main);
+  opacity: 0.3;
+}
+
+.filter-option:hover {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--text-color-main);
+  opacity: 0.6;
+}
+
+.filter-option:active,
+.current-sort {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--text-color-main);
+  opacity: 1;
+}
+
+/* Goods */
+
+.goods-list {
+  list-style: none;
+}
+
+.goods-item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--text-color-main);
+}
+
+.goods-item:hover {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--text-color-hover);
+}
+
+.goods-item:active {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--text-color-main);
+  opacity: 0.3;
+}
+
+.goods-description {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--text-color-address);
+}
+
+/* Pagination */
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-page {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: var(--background-color-header);
+  color: inherit;
+}
+
+.pagination-page:hover {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: var(--background-pagination-hover);
+  color: inherit;
+}
+
+.pagination-page:active {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: var(--background-pagination-active);
+  color: inherit;
+}
+
+.pagination-current {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: 3px solid var(--background-pagination-border);
+  color: inherit;
+}
