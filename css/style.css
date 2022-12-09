@@ -84,12 +84,14 @@ img {
 /* Main navigation */
 
 .main-navigation {
-  font-size: 16px;
+  background-color: var(--background-color-header);
+}
+
+.main-navigation a {
   line-height: 30px;
   font-weight: 500;
   color: var(--text-color-main);
   text-transform: uppercase;
-  background-color: var(--background-color-header);
 }
 
 .site-navigation {
@@ -112,11 +114,11 @@ img {
   opacity: 0.3;
 }
 
-.main-header-logo img:hover {
+.main-header-logo:hover {
   opacity: 0.7;
 }
 
-.main-header-logo img:active {
+.main-header-logo:active {
   opacity: 0.3;
 }
 
@@ -178,6 +180,7 @@ img {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  /* цвет ниже наследуется с body */
   color: var(--text-color-main);
   text-transform: uppercase;
 }
@@ -250,6 +253,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  /* всё выше наследуется */
   color: var(--text-color-addition);
 }
 
@@ -271,6 +275,8 @@ img {
   font-size: 16px;
   line-height: 24px;
   color: var(--text-color-main);
+
+  /* выше наследуется */
   text-transform: uppercase;
 }
 
@@ -394,6 +400,7 @@ img {
   color: var(--text-color-promo);
   border: 2px solid var(--text-color-main);
   border-radius: 3px;
+  opacity: 1;
 }
 
 .connect-form input[type="text"]:invalid,
@@ -425,6 +432,7 @@ textarea:focus {
   color: var(--text-color-promo);
   border: 2px solid var(--text-color-main);
   border-radius: 3px;
+  opacity: 1;
 }
 
 textarea:invalid {
@@ -485,25 +493,12 @@ textarea:invalid {
 }
 
 .button-show:hover {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: var(--text-color-main);
   background-color: var(--background-pagination-hover);
-  border-radius: 3px;
-  border: none;
 }
 
 .button-show:active {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: var(--text-color-main);
   background-color: var(--background-pagination-active);
-  border-radius: 3px;
-  border: none;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   opacity: 0.3;
 }
 
@@ -577,16 +572,17 @@ textarea:invalid {
 }
 
 .goods-description {
-  font-size: 16px;
   line-height: 18px;
   color: var(--text-color-address);
 }
 
 /* Pagination */
+/* просмотреть и убрать лишний код, который наследуется */
 
 .pagination-list {
   list-style: none;
 }
+
 
 .pagination-page {
   font-weight: 500;
@@ -619,11 +615,5 @@ textarea:invalid {
 }
 
 .pagination-current {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  border-radius: 3px;
   border: 3px solid var(--background-pagination-border);
-  color: inherit;
 }
