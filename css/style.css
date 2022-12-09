@@ -39,6 +39,7 @@
     --text-color-hover: #FB565A;
     --text-color-addition:#283136;
     --text-color-address: #666666;
+    --text-color-promo: #444444;
     /* Buttons */
     --background-button-quiet: #FB565A;
     --background-button-hover: #E74246;
@@ -50,13 +51,16 @@
     --background-presentation-hover: #EAB534;
     --background-presentation-active: #E5A722;
     --background-icon-color: #E1E1E1;
+     /* Modal */ 
+     --border-color: #D7DCDE;
+     --border-color-hover: #B4B9BB;
+    
 
     /* --: 
     --: #DFDFDF;
     --: #D5D5D5;
     --: #DBDBDB;
     --: #666666;
-    --: #444444;
     --: #283136; */
   }
 
@@ -79,9 +83,6 @@ img {
   height: auto;
 }
 
-h1, h2 {
-  display: none;
-}
 
  /* Main navigation */
 
@@ -327,4 +328,71 @@ h1, h2 {
 
 .social-button {
   background-color: var(--background-icon-color);
+}
+
+.social-button:hover {
+  background-color: var(--background-button-hover);
+}
+
+.social-button:active {
+  background-color: var(--background-button-active);
+}
+
+.social-slogan {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.social-promo {
+  line-height: 22px;
+  color: var(--text-color-promo);
+}
+
+/* Modal */
+
+.modal-title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+}
+
+.login-login {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.connect-form input[type="text"],
+.connect-form input[type="password"] {
+  line-height: 18px;
+  opacity: 0.5;
+  color: var(--text-color-promo);
+  border: 2px solid var(--border-color);
+  border-radius: 3px;
+}
+
+.connect-form input[type="text"]:hover,
+.connect-form input[type="password"]:hover {
+  line-height: 18px;
+  opacity: 0.5;
+  color: var(--text-color-promo);
+  border: 2px solid var(--border-color-hover);
+  border-radius: 3px;
+}
+
+.connect-form input[type="text"]:focus,
+.connect-form input[type="password"]:focus {
+  line-height: 18px;
+  color: var(--text-color-promo);
+  border: 2px solid var(--text-color-main);
+  border-radius: 3px;
+}
+
+.connect-form input[type="text"]:invalid,
+.connect-form input[type="password"]:invalid {
+  line-height: 18px;
+  color: var(--background-button-hover);
+  border: 2px solid var(--background-button-hover);
+  border-radius: 3px;
 }
