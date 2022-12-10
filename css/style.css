@@ -180,8 +180,6 @@ img {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  /* цвет ниже наследуется с body */
-  color: var(--text-color-main);
   text-transform: uppercase;
 }
 
@@ -300,15 +298,15 @@ img {
   list-style: none;
 }
 
-.logo {
+.clients-logo {
   opacity: 0.2;
 }
 
-.logo-active:active {
+.clients-logo:active {
   opacity: 0.1;
 }
 
-.logo-hover:hover {
+.clients-logo:hover {
   opacity: 1;
 }
 
@@ -577,7 +575,6 @@ textarea:invalid {
 }
 
 /* Pagination */
-/* просмотреть и убрать лишний код, который наследуется */
 
 .pagination-list {
   list-style: none;
@@ -586,7 +583,6 @@ textarea:invalid {
 
 .pagination-page {
   font-weight: 500;
-  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   border-radius: 3px;
@@ -596,7 +592,6 @@ textarea:invalid {
 
 .pagination-page:hover {
   font-weight: 500;
-  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   border-radius: 3px;
@@ -606,7 +601,6 @@ textarea:invalid {
 
 .pagination-page:active {
   font-weight: 500;
-  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   border-radius: 3px;
