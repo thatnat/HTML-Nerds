@@ -69,6 +69,11 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: var(--text-color-main);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a {
@@ -80,6 +85,11 @@ img {
   height: auto;
 }
 
+/* Grid */
+
+.page {
+  height: 100%;
+}
 
 /* Main navigation */
 
@@ -87,7 +97,13 @@ img {
   background-color: var(--background-color-header);
 }
 
+.main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+}
+
 .main-navigation a {
+  display: grid;
   line-height: 30px;
   font-weight: 500;
   color: var(--text-color-main);
