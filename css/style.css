@@ -695,7 +695,7 @@ textarea:invalid {
   list-style: none;
 }
 
-.goods-item {
+.goods-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -703,7 +703,7 @@ textarea:invalid {
   color: var(--text-color-main);
 }
 
-.goods-item:hover {
+.goods-name:hover {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -711,7 +711,7 @@ textarea:invalid {
   color: var(--text-color-hover);
 }
 
-.goods-item:active {
+.goods-name:active {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
