@@ -602,6 +602,7 @@ textarea:invalid {
 
 .legend-shop {
   grid-column: 1 / 2;
+  margin-top: 55px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -693,6 +694,7 @@ textarea:invalid {
 }
 
 .sort-list {
+  display: flex;
   grid-column: 2 / 3;
   justify-self: end;
   list-style: none;
@@ -700,7 +702,13 @@ textarea:invalid {
   padding: 0;
 }
 
+.sort-item {
+  margin-top: 61px;
+  margin-bottom: 54px;;
+}
+
 .sort-option {
+  margin-right: 25px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
