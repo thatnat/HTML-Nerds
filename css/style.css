@@ -559,11 +559,44 @@ textarea:invalid {
 /* Catalog */
 
 .catalog {
+  text-align: center;
+  padding-top: 78px;
+  padding-bottom: 108px;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+}
+
+.catalog-background {
   background-color: var(--background-color-header);
 }
+
+.catalog-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+}
+
+.goods-filter {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
+.sorting-filter {
+  grid-column: 2 / -1;
+  grid-row: 1;
+}
+
+.goods-page {
+  grid-column: 2 / -1;
+  grid-row: 2 / 4;
+}
+
+.filter-pagination {
+  grid-column: 2 / -1;
+  grid-row: 4;
+}
+
 
 .legend-shop {
   font-weight: 700;
@@ -624,6 +657,8 @@ textarea:invalid {
 
 .filter-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .filter-option {
