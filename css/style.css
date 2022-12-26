@@ -575,7 +575,9 @@ textarea:invalid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, auto);
+  gap: 40px;
 }
+
 
 .goods-filter {
   grid-column: 1 / 2;
@@ -602,7 +604,6 @@ textarea:invalid {
 
 .legend-shop {
   grid-column: 1 / 2;
-  margin-top: 55px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -702,10 +703,7 @@ textarea:invalid {
   padding: 0;
 }
 
-.sort-item {
-  margin-top: 61px;
-  margin-bottom: 54px;;
-}
+
 
 .sort-option {
   margin-right: 25px;
