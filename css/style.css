@@ -76,6 +76,10 @@ body {
   align-content: start;
 }
 
+h2 {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -317,10 +321,6 @@ img {
 }
 
 .info-description {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  /* всё выше наследуется */
   color: var(--text-color-addition);
 }
 
