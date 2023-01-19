@@ -250,6 +250,10 @@ img {
   padding: 0;
 }
 
+.services-item {
+  margin-left: 100px;
+}
+
 .services-info {
   font-weight: 400;
   font-size: 16px;
@@ -310,6 +314,7 @@ img {
   font-size: 45px;
   line-height: 45px;
   color: var(--text-color-main);
+  margin-bottom: 35px;
 }
 
 .info-oders {
@@ -318,10 +323,12 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   color: var(--text-color-main);
+  margin-bottom: 35px;
 }
 
 .info-description {
   color: var(--text-color-addition);
+  margin-bottom: 50px;
 }
 
 .info-item {
@@ -329,6 +336,7 @@ img {
   font-size: 16px;
   line-height: 24px;
   color: var(--text-color-addition);
+  margin-top: 35px;
 }
 
 .info-list {
@@ -389,6 +397,10 @@ img {
   padding: 0;
 }
 
+.clients-item {
+  margin-top: 75px;
+}
+
 .clients-logo {
   opacity: 0.2;
 }
@@ -440,6 +452,7 @@ img {
 
 .social-list {
   display: flex;
+  justify-content: center;
   justify-content: space-around;
   list-style: none;
   margin: 0;
@@ -786,6 +799,7 @@ textarea:invalid {
 /* Pagination */
 
 .pagination-list {
+  display: flex;
   list-style: none;
 }
 
