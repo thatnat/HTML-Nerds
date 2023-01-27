@@ -242,11 +242,11 @@ img {
   margin-bottom: 80px;
 }
 
-.ul .slide {
+/* .slide {
   display: none;
 }
 
-/* .slider-current {
+.slider-current {
   display: block;
 } */
 
@@ -320,10 +320,16 @@ img {
 
 .site-wrapper-2 {
   background-image: url("../img/nerds-index-slide2.png");
+  background-repeat: no-repeat;
+  background-size: 760px 431px;
+  background-position: 750px;
 }
 
 .site-wrapper-3 {
   background-image: url("../img/nerds-index-slide3.png");
+  background-repeat: no-repeat;
+  background-size: 760px 431px;
+  background-position: 750px;
 }
 
 /* Services */
