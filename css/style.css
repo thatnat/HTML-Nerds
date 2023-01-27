@@ -89,6 +89,19 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Grid */
 
 .page {
@@ -151,7 +164,7 @@ img {
 
 .site-navigation {
   display: flex;
-  justify-self: center;
+  justify-content: center;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
@@ -160,6 +173,10 @@ img {
 
 .site-navigation-item {
   margin-right: 45px;
+}
+
+.user-navigation {
+  max-width: 140px;
 }
 
 .main-navigation a,
@@ -186,11 +203,46 @@ img {
   opacity: 0.3;
 }
 
+/* Cart Link */
+
+.user-navigation .cart-link {
+  position: relative;
+}
+
+.cart-link::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -40px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.cart-link:hover::before,
+.cart-link:focus::before,
+.cart-link:active::before {
+  opacity: 1;
+}
+
 /* Slider */
 
 .slider {
   background-color: var(--background-color-header);
   margin-bottom: 80px;
+  /* display: none; */
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide-current {
+  display: block;
 }
 
 .slider-item {
@@ -223,6 +275,40 @@ img {
   grid-column: 1 / 2;
   grid-row: 3 / -1;
   justify-self: start;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+}
+
+.slider-controls button {
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  background-color: #FFFFFF;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls .current {
+  background-color: black;
+}
+
+.site-wrapper-1 {
+  background-image: url("../img/nerds-index-slide1.png");
+  background-repeat: no-repeat;
+  background-size: 760px 431px;
+  background-position: right, 0 0;
+}
+
+.site-wrapper-2 {
+  background-image: url("../img/nerds-index-slide2.png");
+}
+
+.site-wrapper-3 {
+  background-image: url("../img/nerds-index-slide3.png");
 }
 
 /* Services */
