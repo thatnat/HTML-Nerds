@@ -242,14 +242,6 @@ img {
   margin-bottom: 80px;
 }
 
-/* .slide {
-  display: none;
-}
-
-.slider-current {
-  display: block;
-} */
-
 .slider-list {
   margin: 0;
   padding: 0;
@@ -267,7 +259,10 @@ img {
 .slider-header {
   grid-column: 1 / 3;
   grid-row: 1 / 2;
+  width: 538px;
   margin: 0;
+  margin-top: 78px;
+  margin-bottom: 25px;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
@@ -277,6 +272,8 @@ img {
 .slider-description {
   grid-column: 1 / 3;
   grid-row: 2 / 3;
+  width: 400px;
+  margin-bottom: 38px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -295,10 +292,17 @@ img {
 .slider-controls {
   display: flex;
   justify-content: center;
+  position: absolute;
+  bottom: 98px;
+  left: 50%;
+  margin-left: -44px;
+  z-index: 20;
+  min-width: 88px;
 }
 
 .slider-controls button {
   padding: 0;
+  margin-right: 17px;
   width: 18px;
   height: 18px;
   background-color: #FFFFFF;
@@ -308,10 +312,32 @@ img {
 }
 
 .slider-controls .current {
-  background-color: black;
+  background-image: url(../img/Slider/Ellipse.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
 
-.site-wrapper-1 {
+.slide {
+  display: none;
+}
+
+.slider-current {
+  display: grid;
+}
+
+.slider-item:first-child::before {
+  content: '';
+  background-image: url(../img/nerds-index-slide1.png);
+  background-repeat: no-repeat;
+  width: 760px;
+  height: 431px;
+
+  grid-column: 2 / -1; 
+  grid-row: 1 / -1;
+}
+
+/* .site-wrapper-1 {
   background-image: url("../img/nerds-index-slide1.png");
   background-repeat: no-repeat;
   background-size: 760px 431px;
@@ -330,7 +356,7 @@ img {
   background-repeat: no-repeat;
   background-size: 760px 431px;
   background-position: 750px;
-}
+} */
 
 /* Services */
 
@@ -365,6 +391,35 @@ img {
   line-height: 24px;
   color: var(--text-color-addition);
 }
+
+.services-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-item::before {
+  content: '';
+  width: 300px;
+  height: 146px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-bottom: 25px;
+}
+
+.services-item:first-child::before {
+  background-image: url(../img/illustration-1.png);
+}
+
+.services-item:nth-child(2)::before {
+  background-image: url(../img/illustration-2.png);
+}
+
+.services-item:nth-child(3)::before {
+  background-image: url(../img/illustration-3.png);
+}
+
+
+
 
 .button-apps {
   background-color: var(--background-appbutton-quiet);
@@ -437,10 +492,24 @@ img {
 }
 
 .info-item {
+  position: relative;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: var(--text-color-addition);
+  padding-left: 40px;
+  margin-bottom: 15px;
+}
+
+.info-item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 4px;
+  background-color: red;
+  top: 5px;
+  left: 5px;
 }
 
 .info-list {
@@ -453,6 +522,16 @@ img {
 
 .statistics {
   grid-column: 3 / -1;
+  display: flex;
+  flex-direction: column;
+}
+.statistics::before {
+  content: '';
+  width: 360px;
+  height: 208px;
+  background-image: url(../img/nerds-illustration.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .statistics-list {
