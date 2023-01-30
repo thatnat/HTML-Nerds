@@ -383,6 +383,7 @@ img {
   font-size: 16px;
   line-height: 24px;
   color: var(--text-color-addition);
+  margin-bottom: 32px;
 }
 
 .services-item {
@@ -411,7 +412,13 @@ img {
   background-image: url(../img/illustration-3.png);
 }
 
+.button-services {
+  margin-bottom: 30px;
+}
 
+/* .button-services .span {
+  padding-top: 1px;
+} */
 
 
 .button-apps {
@@ -467,7 +474,7 @@ img {
   font-size: 45px;
   line-height: 45px;
   color: var(--text-color-main);
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 }
 
 .info-oders {
@@ -481,7 +488,7 @@ img {
 
 .info-description {
   color: var(--text-color-addition);
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .info-item {
@@ -491,7 +498,7 @@ img {
   line-height: 24px;
   color: var(--text-color-addition);
   padding-left: 40px;
-  margin-bottom: 15px;
+  margin-bottom: 28px;
 }
 
 .info-item::before {
@@ -517,6 +524,7 @@ img {
   grid-column: 3 / -1;
   display: flex;
   flex-direction: column;
+  padding-top: 10px;
 }
 .statistics::before {
   content: '';
@@ -538,7 +546,10 @@ img {
 .statistics-title {
   font-weight: 700;
   text-transform: uppercase;
+  padding-top: 23px;
+  padding-left: 19px;
 }
+
 
 .statistics-term {
   grid-row: 2 / 3;
@@ -556,6 +567,12 @@ img {
   color: var(--text-color-main);
 }
 
+.percent {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 40px;
+}
+
 /* Clients */
 
 .clients {
@@ -571,6 +588,7 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 106px;
 }
 
 .clients-item {
@@ -579,6 +597,7 @@ img {
 
 .clients-logo {
   opacity: 0.2;
+  padding-left: 5px;
 }
 
 .clients-logo:active {
@@ -642,6 +661,7 @@ img {
   background-position: center;
   min-width: 1440px;
   min-height: 416px;
+  margin-bottom: 68px;
 }
 
 
@@ -666,7 +686,14 @@ img {
 }
 
 .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--background-icon-color);
+  border-radius: 50%;
+  margin-right: 9px;
+  width: 81px;
+  height: 81px;
 }
 
 .social-button:hover {
@@ -675,6 +702,10 @@ img {
 
 .social-button:active {
   background-color: var(--background-button-active);
+}
+
+.social-button:active .social-active {
+  opacity: 0.3;
 }
 
 .social-slogan {
