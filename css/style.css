@@ -600,12 +600,18 @@ img {
 
 /* Contacts */
 
+.contacts {
+  display:flex;
+}
+
 .contacts-background {
   display: flex;
   flex-direction: column;
   background-color: #FFFFFF;
   width: 319px;
-  /* padding-left: 50px; */
+  padding: 50px;
+  margin-top: 54px;
+  margin-bottom: 54px;
 }
 
 .contacts-heading {
@@ -615,8 +621,6 @@ img {
   text-transform: uppercase;
   width: 193px;
   margin-bottom: 23px;
-  /* padding-left: 50px;
-  padding-top: 49px; */
 }
 
 .contacts-address {
@@ -624,7 +628,6 @@ img {
   color: var(--text-color-address);
   width: 230px;
   margin-bottom: 2px;
-  /* padding-left: 50px; */
 }
 
 .footer-phone {
@@ -632,7 +635,6 @@ img {
   color: var(--text-color-address);
   width: 230px;
   margin-bottom: 37px;
-  /* padding-left: 50px; */
 }
 
 /* Map */
@@ -693,6 +695,7 @@ img {
   margin: 0;
   line-height: 22px;
   color: var(--text-color-promo);
+  margin-bottom: 68px;
 }
 
 /* Modal */
