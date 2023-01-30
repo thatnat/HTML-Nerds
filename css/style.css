@@ -506,8 +506,8 @@ img {
   display: block;
   position: absolute;
   width: 25px;
-  height: 4px;
-  background-color: red;
+  height: 2px;
+  background-color: #FB565A;
   top: 5px;
   left: 5px;
 }
@@ -599,6 +599,22 @@ img {
 /* Main Footer */
 
 /* Contacts */
+
+/* .contacts {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.contacts::before {
+  content: '';
+  position: absolute;
+  width: 1440px;
+  height: 416px;
+  background-image: url(../img/img-map.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+} */
 
 .contacts-heading {
   font-weight: 700;
