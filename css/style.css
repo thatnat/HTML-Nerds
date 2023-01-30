@@ -600,43 +600,49 @@ img {
 
 /* Contacts */
 
-/* .contacts {
+.contacts-background {
   display: flex;
   flex-direction: column;
-  position: relative;
+  background-color: #FFFFFF;
+  width: 319px;
+  /* padding-left: 50px; */
 }
-
-.contacts::before {
-  content: '';
-  position: absolute;
-  width: 1440px;
-  height: 416px;
-  background-image: url(../img/img-map.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-} */
 
 .contacts-heading {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  width: 193px;
+  margin-bottom: 23px;
+  /* padding-left: 50px;
+  padding-top: 49px; */
 }
 
 .contacts-address {
   line-height: 18px;
   color: var(--text-color-address);
+  width: 230px;
+  margin-bottom: 2px;
+  /* padding-left: 50px; */
 }
 
 .footer-phone {
   line-height: 18px;
   color: var(--text-color-address);
+  width: 230px;
+  margin-bottom: 37px;
+  /* padding-left: 50px; */
 }
 
 /* Map */
 
 .map {
-  margin-bottom: 68px;
+  background-image: url(../img/img-map.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 1440px;
+  min-height: 416px;
 }
 
 
