@@ -160,8 +160,7 @@ img {
   grid-template-columns: auto 1fr min-content;
   column-gap: 40px;
   align-items: end;
-
-  
+  margin-top: 4px;
 }
 
 
@@ -175,17 +174,20 @@ img {
 
 .site-navigation {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   list-style: none;
+  justify-self: center;
   margin: 0;
   padding: 0;
+  padding-top: 45px;
 }
 
 .site-navigation a,
 .user-navigation a {
   display: block;
-  padding: 25px 20px;
+  padding: 15px 10px;
+  
 }
 
 .site-navigation-item {
@@ -215,6 +217,10 @@ img {
 .user-navigation a:active {
   color: var(--text-color-main);
   opacity: 0.3;
+}
+
+.main-header-logo {
+  margin-left: 8px;
 }
 
 .main-header-logo:hover {
