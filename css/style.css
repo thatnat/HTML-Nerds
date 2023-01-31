@@ -182,6 +182,12 @@ img {
   padding: 0;
 }
 
+.site-navigation a,
+.user-navigation a {
+  display: block;
+  padding: 25px 20px;
+}
+
 .site-navigation-item {
   margin-right: 45px;
 }
