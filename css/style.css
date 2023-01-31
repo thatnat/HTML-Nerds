@@ -64,12 +64,12 @@
 /* Global */
 
 body {
+  margin: 0px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: var(--text-color-main);
-
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -109,7 +109,7 @@ img {
 }
 
 .container {
-  width: 1158px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -152,7 +152,7 @@ img {
 
 .main-header {
   background-color: var(--background-color-header);
-  padding-top: 44px;
+  padding-top: 48px;
 }
 
 
@@ -161,12 +161,10 @@ img {
   grid-template-columns: auto 1fr min-content;
   column-gap: 40px;
   align-items: end;
-  margin-top: 4px;
 }
 
 
 .main-navigation a {
-  display: grid;
   line-height: 30px;
   font-weight: 500;
   color: var(--text-color-main);
@@ -181,24 +179,16 @@ img {
   justify-self: center;
   margin: 0;
   padding: 0;
-  margin-top: 5px;
-  margin-right: 30px;
 }
 
 .site-navigation a,
 .user-navigation a {
   display: block;
-  padding-bottom: 11px;
-  
+  padding-bottom: 9px;
 }
 
 .site-navigation-item {
   margin-right: 45px;
-}
-
-.site-navigation-link {
-  margin-top: 5px;
-  margin-left: 5px;
 }
 
 .user-navigation {
@@ -221,8 +211,8 @@ img {
   opacity: 0.3;
 }
 
-.main-header-logo {
-  margin-left: 8px;
+.main-header-logo img {
+  vertical-align: middle;
 }
 
 .main-header-logo:hover {
@@ -238,8 +228,7 @@ img {
 
 .user-navigation .cart-link {
   position: relative;
-  margin-bottom: 10px;
-  margin-left: 5px;
+  padding-left: 40px;
 }
 
 
@@ -247,7 +236,7 @@ img {
   content: "";
   position: absolute;
   top: 7px;
-  left: -40px;
+  left: 0px;
   width: 15px;
   height: 15px;
   background-image: url("../img/cart-icon.svg");
