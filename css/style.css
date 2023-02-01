@@ -488,7 +488,7 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   color: var(--text-color-main);
-  margin-bottom: 35px;
+  margin-bottom: 24px;
 }
 
 .info-description {
@@ -502,8 +502,8 @@ img {
   font-size: 16px;
   line-height: 24px;
   color: var(--text-color-addition);
-  padding-left: 40px;
-  margin-bottom: 28px;
+  padding-left: 36px;
+  margin-bottom: 24px;
 }
 
 .info-item::before {
@@ -513,8 +513,8 @@ img {
   width: 25px;
   height: 2px;
   background-color: #FB565A;
-  top: 5px;
-  left: 5px;
+  top: 10px;
+  left: 0px;
 }
 
 .info-list {
@@ -551,8 +551,8 @@ img {
 .statistics-title {
   font-weight: 700;
   text-transform: uppercase;
-  padding-top: 23px;
-  padding-left: 19px;
+  padding-top: 22px;
+  padding-left: 17px;
 }
 
 
