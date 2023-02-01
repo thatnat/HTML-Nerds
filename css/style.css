@@ -530,6 +530,7 @@ img {
   display: flex;
   flex-direction: column;
   padding-top: 10px;
+  margin-bottom: 34px;
 }
 .statistics::before {
   content: '';
@@ -542,10 +543,10 @@ img {
 
 .statistics-list {
   display: grid;
-  column-gap: 22px;
-  row-gap: 10px;
+  row-gap: 12px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
+  margin-top: 0;
 }
 
 .statistics-title {
@@ -553,6 +554,7 @@ img {
   text-transform: uppercase;
   padding-top: 22px;
   padding-left: 17px;
+  margin-bottom: 30px;;
 }
 
 
