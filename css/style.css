@@ -691,7 +691,7 @@ img {
 
 .social-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   list-style: none;
   margin: 0;
   padding: 0;
