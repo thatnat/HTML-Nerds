@@ -1095,7 +1095,10 @@ textarea:invalid {
   padding: 0;
 }
 
-.oder-button:hover {
+
+
+
+/* .oder-button:hover {
   opacity: 0.3;
 }
 
@@ -1103,11 +1106,22 @@ textarea:invalid {
   opacity: 0.6;
 }
 
-.oder-button:active,
-.current-sort {
+.order-transparent {
+  opacity: 0.2;
+}
+
+
+.order-link:hover .order-transparent{
+  opacity: 0.5;
+}
+
+.order-link:active .order-transparent{
   opacity: 1;
 }
 
+.order-current{
+  opacity: 1;
+} */
 
 /* Goods */
 
