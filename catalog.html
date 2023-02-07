@@ -66,8 +66,6 @@
                 </label>
               </div>
             </div>
-            <!-- <label class="price-cost">от<input class="price-cost" type="text" name="min" value="0"></label>
-            <label class="price-cost">до<input class="price-cost" type="text" name="max" value="150000"></label> -->
           </fieldset>
           <fieldset class="filter-item">
             <legend class="legend-shop">Сетка</legend>
@@ -136,10 +134,19 @@
 
         <ul class="order-list">
           <li class="order-item">
-            <a href="catalog.html">От большего к меньшему</a>
+            <a href="catalog.html"><span class="visually-hidden">От большего к меньшему</span>
+              <svg class="order-button current-sort" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 10L0 0H11" fill="#231F20"/>
+              </svg>
+            </a>
+
           </li>
           <li class="order-item">
-            <a href="catalog.html">От меньшего к большему</a>
+            <a href="catalog.html"><span class="visually-hidden">От меньшего к большему</span>
+              <svg class="order-button"  width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20"/>
+              </svg>
+            </a>
           </li>
         </ul>
 

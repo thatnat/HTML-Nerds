@@ -1057,8 +1057,6 @@ textarea:invalid {
   padding: 0;
 }
 
-
-
 .sort-option {
   margin-right: 25px;
   font-weight: 400;
@@ -1089,11 +1087,27 @@ textarea:invalid {
 }
 
 .order-list {
+  display: flex;
+  justify-content: center;
   grid-column: 3 / -1;
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
+.oder-button:hover {
+  opacity: 0.3;
+}
+
+.oder-button:hover {
+  opacity: 0.6;
+}
+
+.oder-button:active,
+.current-sort {
+  opacity: 1;
+}
+
 
 /* Goods */
 
