@@ -1095,14 +1095,21 @@ textarea:invalid {
   padding: 0;
 }
 
+.order-link:active .order-button-down {
+  background-image: url(../img/icon-down-dir.svg);
+  width: 11px;
+  height: 10px;
+  order: 1;
+}
 
 
 
-.oder-button:hover {
+
+/* .order-button:hover {
   opacity: 0.3;
 }
 
-.oder-button:hover {
+.order-button:hover {
   opacity: 0.6;
 }
 
@@ -1121,7 +1128,7 @@ textarea:invalid {
 
 .order-current{
   opacity: 1;
-}
+} */
 
 /* Goods */
 
