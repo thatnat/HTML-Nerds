@@ -1211,13 +1211,17 @@ textarea:invalid {
   color: inherit;
 }
 
+.pagination-page:active span{
+  opacity: 0.3;
+}
+
 .pagination-current {
   border-radius: 3px;
   border: 3px solid var(--background-pagination-border);
-  background-color: var(--background-color-header);
+  background-color: var(--text-color-buttons);
   box-sizing: border-box;
 }
 
-.pagination-page .pagination-next {
+.pagination-next  {
   width: 260px;
 }
