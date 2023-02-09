@@ -1139,6 +1139,28 @@ textarea:invalid {
   list-style: none;
 }
 
+/* .goods-item{
+  position: relative;
+}
+
+.goods-item::before {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  width: 360px;
+  height: 40px;
+  background-image: url("../img/shape.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.12;
+} */
+
+/* .goods-item:hover::before {
+  opacity: 1;
+} */
+
+
 .goods-name {
   font-weight: 700;
   font-size: 18px;
