@@ -877,6 +877,13 @@ textarea:invalid {
   text-transform: uppercase;
 }
 
+.filter-checkbox label{
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
 .filter-item {
   margin: 0;
   padding: 0;
@@ -1018,6 +1025,7 @@ textarea:invalid {
 .filter-list {
   list-style: none;
   margin: 0;
+  margin-bottom: 15px;
   padding: 0;
 }
 
@@ -1028,6 +1036,14 @@ textarea:invalid {
   text-transform: uppercase;
   color: var(--text-color-main);
   opacity: 0.3;
+}
+
+.filter-option label {
+  position: relative;
+  margin-bottom: 20px;
+  display: block;
+  cursor: pointer;
+  user-select: none;
 }
 
 
@@ -1047,7 +1063,31 @@ textarea:invalid {
   line-height: 18px;
   text-transform: uppercase;
   color: var(--text-color-main);
-  opacity: 1;
+}
+
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/Shape.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .sort-list {
@@ -1151,7 +1191,7 @@ textarea:invalid {
   top: 0;
   width: 360px;
   height: 40px;
-  background-image: url("../img/shape.svg");
+  background-image: url("../img/browser.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.12;
